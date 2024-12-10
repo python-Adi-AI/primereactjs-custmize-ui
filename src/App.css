@@ -1,0 +1,234 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dim-mode {
+  background-color: #808080;
+  color: white;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--selectedColor);
+  padding: 1rem;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/* Content Styles */
+.content {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.menu-buttons .p-button {
+  margin: 5px;
+}
+
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-picker .p-button {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+/* Menu Types */
+.static-menu .menu-bar {
+  position: static;
+}
+
+.overlay-menu .menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slim-menu .menu-bar {
+  height: 30px;
+  line-height: 30px;
+}
+
+.slim+-menu .menu-bar {
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.drawer-menu .menu-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--selectedColor);
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal-menu .menu-bar {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.horizontal-menu .menu-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Cog Button Styles */
+.cog-button {
+position: fixed;
+  right: 8px;
+  bottom: 285px;
+  z-index: 1000;
+  width: 32px;
+  height: 31px;
+  padding: 0;
+}
+
+.custom-sidebar .p-sidebar-content {
+  border-radius: 10px;
+  overflow: auto;
+}
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.dim-mode {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Sidebar and Menu Styles */
+.custom-sidebar {
+  width: 300px;
+}
+
+.menu-bar {
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-bar li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-bar li:hover {
+  background-color: #34495e;
+}
+
+/* Content Section Styling */
+.content {
+  padding: 20px;
+  margin-left: 350px; /* Adjust according to sidebar width */
+  transition: transform 0.3s, font-size 0.3s; /* Add smooth font-size transition */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem; /* Default font size */
+}
+
+button.p-button {
+  margin: 5px 0;
+}
+
+.color-picker {
+  display: flex;
+  gap: 5px;
+}
+
+.color-picker button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Button styles for scale and font size controls */
+button.p-button-primary {
+  width: auto;
+  padding: 5px 15px;
+}
+
+button.p-button-secondary {
+  width: auto;
+  padding: 5px 15px;
+}
+
+.cog-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF5733;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.cog-button:hover {
+  background-color: #ff6f42;
+}
